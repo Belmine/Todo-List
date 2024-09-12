@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+:root {
+    --background-light: linear-gradient(rgb(242, 217, 243), #f7e7ea);
+    --text-light: #4b2c39; /* Rose foncé pour le texte */
+    --input-background-light: #ffe0e6; /* Rose pâle pour les inputs */
+    --button-background-light: #f47c99; /* Rose saumon pour les boutons */
+    --progress-background-light: #f2c0c9; /* Progress bar background */
+    --progress-color-light: #e36b87; /* Progress bar color */
+}
+body{
+    background: linear-gradient(rgb(242, 217, 243) , #f7e7ea);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    color: --text-light;
+
+
+}
+
+.container{
+    background: #F5F5F5;
+    /* min-height: 60vh;
+    min-width: 60vh;
+    padding: 15px;
+    border-radius: 15px; */
+    width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto  20px;
+    padding: 40px 30px 70px;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgba(28, 27, 27, 0.2);
+ 
+}
+.container h2 {
+    color: --text-light;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+.entete{
+    
+    /* width: 100%;
+    max-width: 540px;
+    background: #fff;
+    margin: 100px auto  20px;
+    padding: 40px 30px 70px;
+    border-radius: 15px; */
+}
+
+.add{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background:#f47c99 ;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+
+}
+.progress_bar {
+    width: 100%;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.progress {
+    height: 100%;
+    width: 0%;
+    background-color: #4CAF50; /* Couleur de la barre de progression */
+    border-radius: 5px;
+    transition: width 0.3s ease;
+}
+
+.number {
+    text-align: right;
+    font-size: 14px;
+    color: #333;
+}
+ul li{
+    font-size: none;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-image: url(images/uncheked.jpg);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+
+}
+
+/* ajouter l_image checked et barer la tache lorsque que le li a la class checked  */
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(images/cheked.jpg);
+}
+
+ul li  i{
+    position: absolute;
+    right:0;
+    top:5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color:#f47c99;
+    line-height: 40px;
+    text-align: center;
+    display: flex;
+    margin-right: 1rem;
+    margin: 0.5rem;
+}
+
+
